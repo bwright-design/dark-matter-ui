@@ -1,0 +1,14 @@
+<div class="card blur">
+    @if (header){
+        <div class="header">
+            <ng-container *ngTemplateOutlet="header;">
+            </ng-container>
+        </div>
+    }
+    @if (body){
+        <div class="body">
+            <ng-container *ngTemplateOutlet="body;">
+            </ng-container>
+        </div>
+    }
+</div>

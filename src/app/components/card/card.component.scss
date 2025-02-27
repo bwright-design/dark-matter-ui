@@ -1,0 +1,11 @@
+.card{
+    border:.1rem solid hsl(359, 63%, 46%);
+    margin:1rem;
+    .header{
+        border-bottom:.1rem solid hsl(359, 63%, 46%);
+        padding:1rem;
+    }
+    .body{
+        padding:1rem;
+    }
+}

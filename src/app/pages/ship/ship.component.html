@@ -1,1 +1,8 @@
 <p>ship works!</p>
+<app-card [fillMode]="'full'" [title]="'TEST'">
+    <ng-template #header>
+    </ng-template>
+    <ng-template #body style="'height=500PX;'">
+        <app-shipmodel></app-shipmodel>
+    </ng-template>
+</app-card>

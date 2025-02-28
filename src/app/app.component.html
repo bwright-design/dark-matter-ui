@@ -2,9 +2,9 @@
     SHIP SYSTEM CONTROL
 </header>
 <nav class="nav">
-    <button>The Net</button>
-    <button>Ship Systems</button>
-    <button>Navigation</button>
+    <button [routerLink]="'/net'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">The Net</button>
+    <button [routerLink]="'/ship'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Ship Systems</button>
+    <button [routerLink]="'/map'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Navigation</button>
 </nav>
 <router-outlet />
 <div class="crt"></div>

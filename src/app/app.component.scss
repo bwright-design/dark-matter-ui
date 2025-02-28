@@ -12,7 +12,6 @@
     flex-flow: row nowrap;
     gap:1rem;
     button{
-        background:transparent;
         color:var(--ui-white);
         outline: none;
         font-size:1rem;
@@ -20,11 +19,16 @@
         gap:1rem;
         flex-grow: 1;
         justify-content: space-between;
+        padding:0.125rem;
         &:after{
             content:'';
-            background: var(--ui-base);;
+            background: var(--ui-base);
             width:.5rem;
             height: 100%;
+        }
+        &.active{
+            animation: flicker 0.15s;
+            background: var(--ui-base);
         }
     }
 }

@@ -1,0 +1,30 @@
+.header{
+    border:.1rem solid var(--ui-base);
+    margin:1rem;
+    background:var(--ui-base);
+    color:var(--ui-white);
+    text-align: center;
+    padding:0.125rem
+}
+.nav{
+    margin:1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap:1rem;
+    button{
+        background:transparent;
+        color:var(--ui-white);
+        outline: none;
+        font-size:1rem;
+        display: flex;
+        gap:1rem;
+        flex-grow: 1;
+        justify-content: space-between;
+        &:after{
+            content:'';
+            background: var(--ui-base);;
+            width:.5rem;
+            height: 100%;
+        }
+    }
+}

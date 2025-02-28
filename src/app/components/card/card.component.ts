@@ -1,10 +1,11 @@
-import {Component, ContentChild, TemplateRef} from '@angular/core';
-import {NgTemplateOutlet} from "@angular/common";
+import {Component, ContentChild, Input, TemplateRef} from '@angular/core';
+import {NgClass, NgTemplateOutlet} from "@angular/common";
 
 @Component({
   selector: 'app-card',
   imports: [
-    NgTemplateOutlet
+    NgTemplateOutlet,
+    NgClass
   ],
   templateUrl: './card.component.html',
   standalone: true,
@@ -13,6 +14,9 @@ import {NgTemplateOutlet} from "@angular/common";
 export class CardComponent {
   @ContentChild('header') header!: TemplateRef<any>
   @ContentChild('body') body!: TemplateRef<any>
+
+  @Input() fillMode?: string = ''
+  @Input() title?: string = ''
 
 
 }

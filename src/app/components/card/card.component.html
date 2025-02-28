@@ -1,6 +1,7 @@
 <div class="card blur">
     @if (header){
-        <div class="header">
+        <div class="header" [ngClass]="{'full' : fillMode === 'full'}">
+            {{title}}
             <ng-container *ngTemplateOutlet="header;">
             </ng-container>
         </div>

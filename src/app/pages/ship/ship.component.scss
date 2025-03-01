@@ -1,0 +1,12 @@
+.shipWrap{
+    display:flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    gap: 1rem;
+    & *{
+        flex:1;
+    }
+    .ship{
+        flex: 1 0 auto;
+    }
+}

@@ -1,8 +1,16 @@
-<p>ship works!</p>
-<app-card [fillMode]="'full'" [title]="'TEST'">
-    <ng-template #header>
-    </ng-template>
-    <ng-template #body style="'height=500PX;'">
-        <app-shipmodel></app-shipmodel>
-    </ng-template>
-</app-card>
+<div class="shipWrap">
+    <app-card [fillMode]="'full'" [title]="'SHIP DIAGNOSTICS'">
+        <ng-template #body>
+            <div style="width:500px;">test</div>
+        </ng-template>
+    </app-card>
+    <app-card [fillMode]="'full'" [title]="'TEST'">
+        <ng-template #header>
+        </ng-template>
+        <ng-template #body>
+            <div class="ship">
+                <app-shipmodel></app-shipmodel>
+            </div>
+        </ng-template>
+    </app-card>
+</div>

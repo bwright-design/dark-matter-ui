@@ -1,0 +1,38 @@
+{
+  "system": {
+    "name": "Arcane cannon",
+    "id": 0
+  },
+  "system": {
+    "name": "communications",
+    "id": 1
+  },
+  "system": {
+    "name": "fabricator",
+    "id": 2
+  },
+  "system": {
+    "name": "life support",
+    "id": 3
+  },
+  "system": {
+    "name": "sensors",
+    "id": 4
+  },
+  "system": {
+    "name": "shield generator",
+    "id": 5
+  },
+  "system": {
+    "name": "shuttle",
+    "id": 6
+  },
+  "system": {
+    "name": "sickbay",
+    "id": 7
+  },
+  "system": {
+    "name": "umbilicus",
+    "id": 8
+  }
+}

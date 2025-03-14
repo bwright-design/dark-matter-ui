@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {ShipmodelComponent} from "./shipmodel/shipmodel.component";
 import {CardComponent} from "../../components/card/card.component";
+import {ShipService} from "../../services/ship.service";
 
 @Component({
   selector: 'app-ship',
@@ -10,5 +11,14 @@ import {CardComponent} from "../../components/card/card.component";
   styleUrl: './ship.component.scss'
 })
 export class ShipComponent {
+
+  private shipService = inject(ShipService);
+
+  getPlayerShip(){
+    this.shipService.getShips().subscribe( data => {
+      console.log(data);
+    })
+
+  }
 
 }

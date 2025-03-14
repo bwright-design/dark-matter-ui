@@ -1,0 +1,16 @@
+{
+  "ship": "Sledge",
+  "class": "transport",
+  "make": "Dwarven",
+  "ac": 16,
+  "hp": 78,
+  "shield": 18,
+  "dark Matter Engine": "Class 2",
+  "speed": 2500,
+  "maneuverability": 90,
+  "systems": [0,1,2,3,4,5,6,7,8],
+  "crewSpace": {},
+  "cargo": 150,
+  "cost": 18200,
+  "cr": 6
+}
